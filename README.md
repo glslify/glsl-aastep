@@ -4,6 +4,8 @@
 
 ![smooth](http://i.imgur.com/w7El33x.png)
 
+[(glslbin demo)](http://glslb.in/s/d7b309df)
+
 Performs a smoothstep using standard derivatives for anti-aliased edges at any level of magnification. If `GL_OES_standard_derivatives` is not available, this falls back to using `step()` without any anti-aliasing. 
 
 For this module to work, you must enable standard derivatives at your top-level shader:
@@ -42,7 +44,7 @@ void main() {
   uv.x *= iResolution.x / iResolution.y;
 
   //animate zoom
-  uv /= sin(iGlobalTime); 
+  uv /= sin(iGlobalTime * 0.2); 
 
   //radial distance
   float len = length(uv);
