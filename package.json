@@ -1,6 +1,6 @@
 {
   "name": "glsl-aastep",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "anti-alias smoothstep utility function",
   "main": "index.js",
   "license": "MIT",
